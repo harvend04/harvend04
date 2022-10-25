@@ -27,6 +27,7 @@ height: 50px;
     filter: blur(4px);
     box-shadow: inset 0px 5px 0px 2px;
     background-attachment: fixed;
+    background-position: center top;
 }
 .bodyColor {
     background-color: rgba(0, 0, 0, 0.511);
