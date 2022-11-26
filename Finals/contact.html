@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keyword" content="Overall Properties page">
+<meta name="description" content="Final Project Web Design 1st semester">
+<meta name="author" content="Harvend Tauries">
+<link rel="icon" type="jpg" href="pics\logo.jpg">
+<link rel="stylesheet" href="projectcss.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="sidenav" style="height:100%">
+        <p class="title"><img src="pics\logo.jpg" alt="logo" width=100px></p>
+        <a href="homepage.html">Profile</a>
+        <a href="prop.html">Properties</a>
+        <a href="credit.html">Credit</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="main">
+        <form action="mailto:Reales@gmail.com">
+            <h4 class="cent">Contact Me now!</h4> 
+            <fieldset>
+                <legend class="cent">Interested With Our Model ?</legend> 
+                <label for="Model" class="opt" >1. Which <b>Model</b> are you interested in? </label>
+                <br>
+                <input type="checkbox" id="Model1" name="Model" value="Model 1" >
+                <label for="Model1" class="opt">Model 1 </label>
+
+                <input type="checkbox" id="Model2" name="Model" value="Model 2">
+                <label for="Model2"class="opt">Model 2 </label>
+
+                <input type="checkbox" id="Model3" name="Model" value="Model 3">
+                <label for="Model3" class="opt">Model 3 </label>
+                <br>
+                <label for="Model1" class="opt"><img src="pics\model1.jpg" alt="Model 1 Pic"class="small-img"></label>
+                <label for="Model2" class="opt"><img src="pics\model2.jpg" alt="Model 2 Pic"class="small-img"></label>
+                <label for="Model3" class="opt"><img src="pics\model3.jpg" alt="Model 3 Pic"class="small-img"></label>
+                <br>
+                <br>
+                <label for="Qs" class="opt">2. Do you have any <b>Question</b> regarding the building? </label><br>
+                <label for="Qs" class="opt"> <small><em>&emsp;&emsp;(Please put your question in box below)</em></small> </label><br>
+                <textarea id="Qs" name="Other" rows="4" cols="50" placeholder="Fill this blank"></textarea>
+                <br>
+                <br>
+                <label for="Time" class="opt">3. What <b>Time</b> the best for you to review the building? </label><br>
+                <input type="datetime-local" id="Time" name="Time" min="2022-11-22T00:00">
+                <br>
+                <div class="cent">
+                    <input type="submit" value="Submit" onclick="alert('Thank You For Filling The Form')">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+    <form action="mailto:Reales@gmail.com">
+    <fieldset class="bottom">
+        <legend class="cent"> Or</legend>
+        <legend > If you have any preferences, let us know below!</legend>
+        <br>
+        <label for="FName" class="smaller-text">First Name :</label>
+        <input type="text" id="FName" name="FName" placeholder="Fill Your First Name" maxlength="30" required><br>
+        <br>
+        <label for="LName" class="smaller-text">Last Name :</label>
+        <input type="text" id="LName" name="LName" placeholder="Fill Your Last Name" maxlength="50" required><br>
+        <br>
+        <label for="phone"class="smaller-text">Phone number :</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="+[0-9]{2}([0-9]{3})[0-9]{3}-[0-9]{4}" required>
+        <small style="font-size: 15px;">(Format: +XX(XXX)XXX-XXXX)</small><br>
+        <br>
+        <label for="email" class="smaller-text" >Email :</label>
+        <input type="email" id="email" name="email" required><br>
+        <br>
+        <legend>Housing preference</legend>
+        <br>
+        <label for="Type" class="smaller-text">1. Which <b>Type</b> are you interested in? </label>
+        <br>
+        <input type="checkbox" id="House" name="Type" value="House">
+        <label for="House" class="opt" style="font-size: 20px;">House </label>
+
+        <input type="checkbox" id="Condo" name="Type" value="Condo">
+        <label for="Condo"class="smaller-text">Condo </label><br>
+        <br>
+        <label for="Bedroom" class="smaller-text">2. How many <b>Bedrooms</b> you prefer? </label>
+        <br>
+        <input list="Bedroom" name="Bedroom" placeholder="click here">
+        <datalist id="Bedroom">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value=">4">
+        </datalist><br>
+        <br>
+        <label for="Bathroom" class="smaller-text">3. How many <b>Bathroom</b> you prefer? </label>
+        <br>
+        <input list="Bathroom" name="Bathroom" placeholder="click here">
+        <datalist id="Bathroom">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value=">4">
+        </datalist><br>
+        <br>
+        <label for="QnC" class="smaller-text">4. <b>Question or Comment</b> :  </label><br>
+        <label for="QnC" class="smaller-text"> <small><em>&emsp;&emsp;(Please put your question/comment in box below)</em></small> </label><br>
+        <textarea id="QnC" name="QnC" rows="4" cols="70" placeholder="Fill this blank"></textarea><br>
+        <br>
+        <div class="cent">
+            <input type="submit" value="Submit" onclick="alert('Thank You For Filling The Form(Make Sure To fill all essential part)')">
+        </div>
+    </fieldset>
+
+    </form>
+</body>
+</html>
